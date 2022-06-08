@@ -9,4 +9,14 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/produce-event')
+  produceEvent() {
+    this.appService.produceEvent();
+  }
+
+  @Get('/consume-event')
+  consumeEvent() {
+    this.appService.consumeEvent();
+  }
 }
